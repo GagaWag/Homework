@@ -19,7 +19,7 @@ public class Task1 {
             }
         }
         if (b == 1) {
-            System.out.println("Данное число есть в массиве");
+            System.out.println("Данное число в массиве");
         } else {
             System.out.println("Данного числа нет в массиве");
         }
