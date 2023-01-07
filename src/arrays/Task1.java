@@ -15,11 +15,11 @@ public class Task1 {
         for (int i = 0; i < a.length; i++) {
             if (a[i] == number) {
                 b = 1;
-
+                break;
             }
         }
         if (b == 1) {
-            System.out.println("Данное число в массиве");
+            System.out.println("Данное число есть в массиве");
         } else {
             System.out.println("Данного числа нет в массиве");
         }

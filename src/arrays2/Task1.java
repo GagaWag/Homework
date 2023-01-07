@@ -26,9 +26,11 @@ public class Task1 {
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                for(int b =0; b<array[j].length;b++){
+                for (int b = 0; b < array[j].length; b++) {
                     array[i][j][b] = array[i][j][b] + number;
                 }
-            }}
-            System.out.println(Arrays.deepToString(array));
-}}
+            }
+        }
+        System.out.println(Arrays.deepToString(array));
+    }
+}

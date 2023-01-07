@@ -9,35 +9,34 @@ import java.util.Random;
 public class Task4 {
 
     public static void main(String[] args) {
-        float sumfirst = 0;
-        int[] arrayfirst = new int[5];
+        int length = 5;
+        float sumfirst = 0f;
+        int[] arrayfirst = new int[length];
         for (int i = 0; i < arrayfirst.length; i++) {
             Random random = new Random();
             arrayfirst[i] = random.nextInt(50);
             sumfirst = sumfirst + arrayfirst[i];
         }
-        sumfirst = sumfirst / 5;
+        sumfirst = sumfirst / length;
         System.out.println(Arrays.toString(arrayfirst));
 
-        int[] arraysecond = new int[5];
-        float sumsecond = 0;
+        int[] arraysecond = new int[length];
+        float sumsecond = 0f;
+        Random random = new Random();
         for (int i = 0; i < arraysecond.length; i++) {
-            Random random = new Random();
             arraysecond[i] = random.nextInt(50);
             sumsecond = sumsecond + arraysecond[i];
         }
-        sumsecond = sumsecond / 5;
+        sumsecond = sumsecond / length;
         System.out.println(Arrays.toString(arraysecond));
         System.out.println("Среднее арифмитическое первого массива " + sumfirst);
         System.out.println("Среднее арифмитическое второго массива " + sumsecond);
-        if (sumfirst < sumsecond) {
-            System.out.println("Среднее арифмитическое первого массива меньше");
-        }
-        if (sumfirst > sumsecond) {
-            System.out.println("Среднее арифмитическое второго массива меньше");
-        }
         if (sumfirst == sumsecond) {
             System.out.println("Среднее арифмитическое первого и второго массива равны ");
+        } else if (sumfirst < sumsecond) {
+            System.out.println("Среднее арифмитическое первого массива меньше");
+        } else {
+            System.out.println("Среднее арифмитическое второго массива меньше");
         }
 
 
