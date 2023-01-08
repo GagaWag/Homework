@@ -43,7 +43,6 @@ public class CreditCard {
 
     public void addSum(double sumToAdd) {
         this.sum = this.sum + sumToAdd;
-
     }
 
     public void removeSum(double sumToRemove) {

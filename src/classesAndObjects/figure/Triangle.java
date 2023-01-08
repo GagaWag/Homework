@@ -1,12 +1,10 @@
 package classesAndObjects.figure;
 
 public class Triangle extends Figure {
-
     private static final String name = "Triangle";
     private double sideA;
     private double sideB;
     private double sideC;
-
 
     public Triangle(double sideA, double sideB, double sideC) {
         this.sideA = sideA;
@@ -21,9 +19,8 @@ public class Triangle extends Figure {
     }
 
     @Override
-    public double getCircumference() {
+    public double getPerimeter() {
         return sideA + sideB + sideC;
-
     }
 
     @Override

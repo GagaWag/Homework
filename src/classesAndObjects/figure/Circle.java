@@ -2,7 +2,6 @@ package classesAndObjects.figure;
 
 public class Circle extends Figure {
     private static final String name = "Circle";
-
     private double radius;
 
     public Circle(double radius) {
@@ -15,7 +14,7 @@ public class Circle extends Figure {
     }
 
     @Override
-    public double getCircumference() {
+    public double getPerimeter() {
         return Math.PI * radius * 2;
     }
 
@@ -23,7 +22,6 @@ public class Circle extends Figure {
     public String getName() {
         return name;
     }
-
 
     public double getRadius() {
         return radius;

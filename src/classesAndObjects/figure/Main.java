@@ -10,15 +10,12 @@ public class Main {
 
         double sum = 0;
 
-        Figure[] figure = {new Rectangle(4, 3),
-                new Triangle(6, 10, 6),
-                new Circle(10),
-                new Circle(20),
-                new Circle(30)};
+        Figure[] figure = {new Rectangle(4, 3), new Triangle(6, 10, 6),
+                new Circle(10), new Circle(20), new Circle(30)};
 
         for (Figure i : figure) {
-            System.out.println(i.getName() + ": circumference = " + i.getCircumference());
-            sum = sum + i.getCircumference();
+            System.out.println(i.getName() + ": circumference = " + i.getPerimeter());
+            sum = sum + i.getPerimeter();
         }
         System.out.println("Cумма периметра всех фигур = " + sum);
     }
