@@ -4,7 +4,7 @@ public class Phone {
     public long number;
     public String model;
     public int weight;
-    public String name = "Андрей";
+    public String name;
 
     public Phone(long number, String model, int weight) {
         this.number = number;
@@ -15,15 +15,18 @@ public class Phone {
 
     @Override
     public String toString() {
-        return "Phone number is " + this.number + "\nPhone model is " + this.model + "\nPhone weight is " + this.weight
-                + "\n";
+        return "Phone number is " + this.number + "\nPhone model is " + this.model + "\nPhone weight is " + this.weight + "\n";
     }
 
-    public void receiveCall() {
-        System.out.println("Звонит " + name);
+    public void receiveCall(String name) {
+        this.name = name;
+        System.out.println("Звонит " + this.name);
     }
 
     public void receiveCall(String name, long number) {
+        this.name = name;
+        this.number = number;
+        System.out.println(this.name + " " + this.number);
     }
 
     public long getNumber() {

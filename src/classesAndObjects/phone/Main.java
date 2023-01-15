@@ -29,11 +29,11 @@ class Main {
         System.out.println(firstPhone.toString());
         System.out.println(secondPhone.toString());
         System.out.println(thirdPhone.toString());
-        firstPhone.receiveCall();
         firstPhone.getNumber();
         secondPhone.getNumber();
         thirdPhone.getNumber();
-        firstPhone.receiveCall("23", 556);
+        firstPhone.receiveCall("Виктор");
+        secondPhone.receiveCall("Андрей", 345292544521L);
         firstPhone.sendMessage(375292904235L, 345465444563L, 434355654324L);
     }
 }
