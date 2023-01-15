@@ -15,7 +15,7 @@ public class Task1 {
         for (int i = 0; i < a.length; i++) {
             if (a[i] == number) {
                 b = 1;
-
+                break;
             }
         }
         if (b == 1) {
