@@ -17,7 +17,7 @@ public class Rectangle extends Figure {
     }
 
     @Override
-    public double getCircumference() {
+    public double getPerimeter() {
         return (sideA + sideB) * 2;
     }
 
@@ -41,5 +41,4 @@ public class Rectangle extends Figure {
     public void setSideB(double sideB) {
         this.sideB = sideB;
     }
-
 }
