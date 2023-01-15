@@ -26,7 +26,6 @@ public class Task2 {
                 if (i % 2 == 0 && j % 2 != 0) {
                     array[i][j] = "B";
                 }
-
             }
         }
         for (String[] element : array) {
